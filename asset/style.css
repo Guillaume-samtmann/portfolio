@@ -1,0 +1,902 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'poppins';
+}
+
+
+.portfolio{
+    display: flex;
+}
+aside{
+    height: 100vh;
+    background-color: #ffba31;
+    width: 20%;
+    display: none !important;
+
+}
+.link {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link hr{
+    width: 3px;
+    background-color: black;
+    height: 30px;
+}
+.cercle{
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 10%;
+}
+.linkNav{
+    list-style: none;
+}
+.linkNav a{
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+
+}
+.Un{
+    opacity: 0.1;
+
+}
+.deux{
+    opacity: 0.1;
+
+}
+.trois{
+    opacity: 0.9;
+
+}
+.quatre{
+    opacity: 0.1;
+
+}
+aside img{
+    width: 100%;
+    height: 40%;
+}
+
+.contenuPortfolio{
+    width: 100%;
+}
+
+.buttonPortfolio{
+    background-color: #ffba31;
+    border: none;
+    width: 50%;
+    margin-top: 20px;
+    height: 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-out
+}
+
+.buttonPortfolio:hover{
+    background-color: #ffba31b7;
+    scale: 0.97;
+}
+.buttonPortfolio a:hover{
+    color: #000000;
+}
+
+.buttonPortfolio a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease-out
+}
+.projet_align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.titre{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 37px;
+    margin-bottom: 10px;
+}
+
+.projet {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.projet img{
+    width: 300px;
+    height: 200px;
+}
+
+.nav2 {
+    border-radius: 50px;
+    display: flex !important;
+    margin-top: 140px;
+    margin-right: 5px;
+    height: 25rem;
+    width: 12%;
+    background-color: #ffba31;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkSvg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linkNavSvg{
+    padding-top: 20px;
+    list-style: none;
+}
+.linkNavSvg a{
+    color: black;
+    text-decoration: none;
+}
+.Iun{
+    opacity: 0.1;
+
+}
+.Ideux{
+    opacity: 0.1;
+
+}
+.Itrois{
+    opacity: 0.9;
+}
+.Iquatre{
+    opacity: 0.1;
+
+}
+
+.contenuAccueil{
+    width: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.photoMoi {
+    height: 32vh;
+    width: 32vh;
+    background-image: url(../image/guillaumes-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.description {
+    margin-left: 20px;
+}
+h2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.nomPrenom {
+    margin-left: 10px;
+    text-align: center;
+    color: #ffba31;
+}
+h3 {
+    text-align: center;
+    width: 70%;
+    background-color: #ffba31;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.introduction{
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttonAcc{
+    background-color: #ffba31;
+    border: none;
+    width: 60%;
+    height: 2.5rem;
+    border-radius: 20px;
+    transition: all 0.5s ease-out
+}
+.buttonAcc li{
+    list-style: none;
+}
+.buttonAcc li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease-out
+}
+.buttonAcc:hover{
+    background-color: #ffba31b7;
+    scale: 0.97;
+}
+.buttonAcc li a:hover{
+    color: #000000;
+}
+
+.contenuApropos{
+    display: none;
+    width: 100%;
+}
+.contenuApropos h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apropos{
+    margin-top: 25px;
+}
+.nomPrenom2 {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.introduction2{
+    margin:20px 20px 20px 20px;
+    text-align: center;
+}
+.buttonCv {
+    margin-top: 20px;
+    background-color: #ffba31;
+    border: none;
+    width: 71%;
+    height: 2.5rem;
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+}
+
+.buttonCv:hover{
+    background-color: #ffba31b7;
+    scale: 0.97;
+}
+.buttonCv a:hover{
+    color: #000000;
+}
+
+.buttonCv a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease-out
+}
+.cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.repartionCv {
+    margin-left: 20px;
+    height: 47rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categorieCv{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px dashed #ffba31;
+    background-color: black;
+}
+.categorieCv h3{
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffba31;
+}
+.categorieCvList {
+    height: 51%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+svg.bi.bi-film {
+    color: white;
+}
+svg.bi.bi-person-walking {
+    color: white;
+}
+svg.bi.bi-code-square {
+    color: white;
+}
+
+.categorieCv1{
+    border-left: 1px dashed #ffba31;
+    border-bottom: 1px dashed #ffba31;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}
+.categorieCv1 h3{
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffba31;
+}
+.categorieCv1List {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+.categorieCv1List p{
+    padding: 5px;
+}
+
+.categorieCv2{
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    border-right: 1px dashed #ffba31;
+    
+}
+.categorieCv2 h3{
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffba31;
+}
+.categorieCv2 p{
+    color: white;
+    text-align: center;
+}
+
+.categorieCv3{
+    border-top: 1px dashed #ffba31;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+}
+.categorieCv3 h3{
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffba31;
+}
+.categorieCv3 p{
+    color: white;
+    text-align: center;
+}
+.experienceCv {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    margin-left: 52px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+.experienceCv h3{
+    text-align: center;
+    width: 96%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.experienceList{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.experienceList hr{
+    background-color: #000000;
+    width: 2px;
+    height: 30px;
+}
+
+.contenuContact{
+    width: 100%;
+    display: none;
+}
+.contact {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+.champs{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+}
+.email{
+    border-radius: 10px;
+    width: 40%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.object{
+    border-radius: 10px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.message{
+    border-radius: 10px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.formulaire{
+    width: 50%;
+    margin-right: 20px;
+    display: none;
+}
+.illustation {
+    border-radius: 30px;
+    color: #ffba31;
+    background-color: black;
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.telephone {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.telephone p{
+    margin-left: 20px;
+}
+.mail {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mail p{
+    margin-left: 1px;
+}
+
+.mesReseaux{
+    margin-top: 25px;
+}
+
+.mesReseaux a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: #ffba31;
+}
+
+footer{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 36px;
+    background-color: #ffba31;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+    aside{
+        display: block !important;
+    }
+    .contenuPortfolio{
+        width: 75%;
+    }
+    .projet_align {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        padding: 10px 200px 10px 200px;
+        border: 1px solid black;
+        font-size: 4rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .projet{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        margin-left: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;    
+    }
+    
+    .projet img{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .nav2 {
+        border-radius: 50px;
+        display: flex;
+        margin-top: 140px;
+        margin-right: 50px;
+        height: 25rem;
+        width: 4%;
+        background-color: #ffba31;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .linkSvg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .linkNavSvg{
+        padding-top: 20px;
+        list-style: none;
+    }
+    .linkNavSvg a{
+        color: black;
+        text-decoration: none;
+    }
+    .Iun{
+        opacity: 0.1;
+    
+    }
+    .Ideux{
+        opacity: 0.1;
+    
+    }
+    .Itrois{
+        opacity: 0.9;
+    }
+    .Iquatre{
+        opacity: 0.1;
+    
+    }
+    
+    .contenuAccueil{
+        width: 93%;
+        display: none;
+        align-items: center;
+        flex-direction: row;
+    }
+    .photoMoi {
+        height: 100vh;
+        width: 150vh;
+        background-image: url(../image/guillaumes-img.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .description {
+        margin-left: 20px;
+    }
+    h2 {
+        display: flex;
+    }
+    .nomPrenom {
+        margin-left: 10px;
+        text-align: center;
+        color: #ffba31;
+    }
+    h3 {
+        text-align: center;
+        width: 30%;
+        background-color: #ffba31;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .introduction{
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .buttonAcc{
+        background-color: #ffba31;
+        border: none;
+        width: 30%;
+        height: 2.5rem;
+        border-radius: 20px;
+        transition: all 0.5s ease-out
+    }
+    .buttonAcc li{
+        list-style: none;
+    }
+    .buttonAcc li a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 0.5s ease-out
+    }
+    .buttonAcc:hover{
+        background-color: #ffba31b7;
+        scale: 0.97;
+    }
+    .buttonAcc li a:hover{
+        color: #000000;
+    }
+    
+    .contenuApropos{
+        display: none;
+        width: 75%;
+    }
+    .contenuApropos h2{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .nomPrenom2 {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    
+    .buttonCv{
+        margin-top: 1px;
+        background-color: #ffba31;
+        border: none;
+        width: 15%;
+        height: 2.5rem;
+        border-radius: 20px;
+        transition: all 0.5s ease-out
+    }
+    
+    .buttonCv:hover{
+        background-color: #ffba31b7;
+        scale: 0.97;
+    }
+    .buttonCv a:hover{
+        color: #000000;
+    }
+    
+    .buttonCv a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all 0.5s ease-out
+    }
+    .cv {
+        display: flex;
+        flex-direction: row;
+    }
+    .repartionCv {
+        margin-left: 20px;
+        width: 60%;
+        height: 21rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .categorieCv{
+        width: 49%;
+        height: 50%;
+        border-bottom: 1px dashed #ffba31;
+        background-color: black;
+    }
+    .categorieCv h3{
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #ffba31;
+    }
+    .categorieCvList {
+        height: 51%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    svg.bi.bi-film {
+        color: white;
+    }
+    svg.bi.bi-person-walking {
+        color: white;
+    }
+    svg.bi.bi-code-square {
+        color: white;
+    }
+    
+    .categorieCv1{
+        border-left: 1px dashed #ffba31;
+        border-bottom: 1px dashed #ffba31;
+        width: 49%;
+        height: 50%;
+        background-color: black;
+    }
+    .categorieCv1 h3{
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #ffba31;
+    }
+    .categorieCv1List {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+    }
+    .categorieCv1List p{
+        padding: 5px;
+    }
+    
+    .categorieCv2{
+        width: 49%;
+        height: 50%;
+        background-color: black;
+        border-right: 1px dashed #ffba31;
+        
+    }
+    .categorieCv2 h3{
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #ffba31;
+    }
+    .categorieCv2 p{
+        color: white;
+        text-align: center;
+    }
+    
+    .categorieCv3{
+        width: 49%;
+        height: 50%;
+        background-color: black;
+    }
+    .categorieCv3 h3{
+        text-align: center;
+        width: 100%;
+        background-color: #000000;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #ffba31;
+    }
+    .categorieCv3 p{
+        color: white;
+        text-align: center;
+    }
+    .experienceCv{
+        width: 40%;
+        margin-right: 20px;
+        margin-bottom:10px;
+        margin-top: 1px;
+    }
+    .experienceCv h3{
+        
+        text-align: center;
+        width: 100%;
+        margin-top: 1px;
+        margin-bottom: 10px;
+        color: #000000;
+    }
+    .experienceList{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .experienceList hr{
+        background-color: #000000;
+        width: 2px;
+        height: 30px;
+    }
+    
+    .contenuContact{
+        width: 75%;
+        display: none;
+    }
+    .contact {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .champs{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        margin-bottom: 5px;
+    }
+    .email{
+        border-radius: 10px;
+        width: 40%;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .object{
+        border-radius: 10px;
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .message{
+        border-radius: 10px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .formulaire{
+        width: 50%;
+        margin-right: 20px;
+        display: none;
+    }
+    .illustation {
+        border-radius: 30px;
+        color: #ffba31;
+        background-color: black;
+        display: flex;
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .telephone {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        flex-direction: row;
+    }
+    .telephone p{
+        margin-left: 20px;
+    }
+    .mail {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .mail p{
+        margin-left: 20px;
+    }
+    
+    .mesReseaux{
+        margin-top: 25px;
+    }
+    
+    .mesReseaux a{
+        margin-left: 50px;
+        text-decoration: none;
+        color: #ffba31;
+    }
+    
+}
+
+
