@@ -3,6 +3,7 @@
     padding: 0px;
     margin: 0px;
     font-family: 'poppins';
+ 
 }
 
 
@@ -87,6 +88,7 @@ aside img{
 }
 
 .buttonPortfolio a{
+    font-size: 0.8rem;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -97,6 +99,21 @@ aside img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.projet_align:hover img{
+
+ background-color: #ffba31;
+}
+
+.projet_align:hover .enSavoirPlus{
+    display: block;
+    cursor: pointer;
+}
+.enSavoirPlus{
+    margin-top: 100px;
+    position: absolute;
+    display: none;
 }
 
 
@@ -119,6 +136,7 @@ h1 {
 }
 
 .projet {
+   
     display: flex;
     margin-top: 0px;
     margin-left: 20px;
@@ -506,6 +524,47 @@ footer{
     align-items: center;
 }
 
+.leProjet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.d-block {
+    width: 380px;
+    height: 230px;
+}
+
+div#carouselExampleIndicators {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill="black" fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>')!important;
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill="black" fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>')!important;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex !important;
+    justify-content: space-evenly;
+}
+.carousel-indicators [data-bs-target] {
+    position: relative !important;
+    top: 100px !important;
+    background-color: #000000 !important;
+}
+span.carousel-control-prev-icon {
+    position: relative;
+    left: -60px;
+}
+span.carousel-control-next-icon {
+    position: relative;
+    right: -55px;
+}
+
 @media screen and (min-width: 480px) {
     aside{
         display: block !important;
@@ -547,7 +606,7 @@ footer{
         margin-top: 140px;
         margin-right: 50px;
         height: 25rem;
-        width: 4%;
+        width: 3%;
         background-color: #ffba31;
         justify-content: center;
         align-items: center;
@@ -557,6 +616,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0px;
     }
     .linkNavSvg{
         padding-top: 20px;

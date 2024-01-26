@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Portfolio</title>
 </head>
 <body>
@@ -31,25 +32,62 @@
                     <h1>portfolio</h1>
                     <p>Samtmann Guillaume Développeur web & jeux video voici mes réalisations</p>
                 </div>
-                    <section class="projet">
-                        <div class="projet_align">
-                            <img src="image/site_paroisseV2.png" alt="">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="leProjet">
+                            <img src="image/site_paroisseV2.png" class="d-block " alt="Site paroisse ssf">
                             <button class="buttonPortfolio"><a href="https://paroisses-catholiques-ssf.com/">Découvrir le site</a></button>
                         </div>
-                        <div class="projet_align">
-                            <img src="image/ciows-store.jpg" alt="">
+                        <div class="leProjet">
+                            <img src="image/ciows-store.jpg" class="d-block " alt="site ciwos-store">
                             <button class="buttonPortfolio"><a href="https://ciwos-store.fr/">Découvrir le site</a></button>
-                        </div>
-                        <div class="projet_align">
-                            <img src="image/jeux_video.png" alt="">
+                        </div> 
+                      </div>
+                      <div class="carousel-item">
+                        <div class="leProjet">
+                            <img src="image/jeux_video.png" class="d-block " alt="jeux video zombieWar">
                             <button class="buttonPortfolio"><a href="https://gamejolt.com/games/ZombieWar/772638">Découvrir le jeux</a></button>
                         </div>
-                        <div class="projet_align">
-                            <img src="image/snake.png" alt="">
+                        <div class="leProjet">
+                            <img src="image/snake.png" class="d-block " alt="jeux snake">
                             <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/snake/">Découvrir le jeux</a></button>
                         </div>
-                        
-                    </section>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- <div class="projet_align">
+                    <div class="enSavoirPlus">
+                        <p>En savoir plus</p>
+                    </div>
+                    <img src="image/site_paroisseV2.png" alt="">
+                    <button class="buttonPortfolio"><a href="https://paroisses-catholiques-ssf.com/">Découvrir le site</a></button>
+                    </div>
+                    <div class="projet_align">
+                    <img src="image/ciows-store.jpg" alt="">
+                    <button class="buttonPortfolio"><a href="https://ciwos-store.fr/">Découvrir le site</a></button>
+                    </div>
+                    <div class="projet_align">
+                    <img src="image/jeux_video.png" alt="">
+                    <button class="buttonPortfolio"><a href="https://gamejolt.com/games/ZombieWar/772638">Découvrir le jeux</a></button>
+                    </div>
+                    <div class="projet_align">
+                    <img src="image/snake.png" alt="">
+                    <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/snake/">Découvrir le jeux</a></button>
+                </div>-->   
             </section>
             <!--Accueil-->
             <section class="contenuAccueil">
@@ -223,12 +261,10 @@
             </aside>
         </section>
     </main>
-
     <footer>
         <p>réalisé par Guillaume SAMTMANN ©2024</p>
     </footer>
-
     <script type="text/javascript" src="asset/main.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
