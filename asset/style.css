@@ -11,7 +11,7 @@
     display: flex;
 }
 aside{
-    height: 100vh;
+    height: 115vh;
     background-color: #ffba31;
     width: 20%;
     display: none !important;
@@ -24,6 +24,7 @@ aside{
     align-items: center;
 }
 .link hr{
+    margin: 0px;
     width: 3px;
     background-color: black;
     height: 30px;
@@ -124,6 +125,13 @@ aside img{
     flex-direction: column;
     align-items: center;
 }
+.titre p {
+    text-align: center;
+    padding-left: 19px;
+    margin-top: 129px;
+    margin-bottom: 1rem;
+    position: absolute;
+}
 
 h1 {
     padding: 10px 10px 10px 10px;
@@ -159,12 +167,13 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 .linkSvg {
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .linkNavSvg{
     padding-top: 20px;
     list-style: none;
@@ -516,12 +525,14 @@ label{
 
 footer{
     display: flex;
-    margin-top: 20px;
     width: 100%;
     height: 36px;
     background-color: #ffba31;
     justify-content: center;
     align-items: center;
+}
+footer p{
+    margin-top: 20px;
 }
 
 .leProjet {
@@ -531,9 +542,21 @@ footer{
 }
 
 img.d-block {
-    width: 380px;
-    height: 230px;
+    width: 270px;
+    height: 170px;
 }
+
+.carousel-item.active {
+    display: flex !important;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.carousel-inner {
+    padding-top: 14px;
+   
+}
+
 
 div#carouselExampleIndicators {
     margin-top: 50px;
@@ -552,18 +575,24 @@ div#carouselExampleIndicators {
     justify-content: space-evenly;
 }
 .carousel-indicators [data-bs-target] {
+    display: none;
     position: relative !important;
     top: 100px !important;
     background-color: #000000 !important;
 }
-span.carousel-control-prev-icon {
-    position: relative;
-    left: -60px;
-}
 span.carousel-control-next-icon {
+    margin-bottom: 70px;
     position: relative;
     right: -55px;
+    display: none;
 }
+span.carousel-control-prev-icon {
+    margin-bottom: 70px;
+    position: relative;
+    left: -60px;
+    display: none;
+}
+
 
 @media screen and (min-width: 480px) {
     aside{
@@ -955,6 +984,31 @@ span.carousel-control-next-icon {
         margin-left: 50px;
         text-decoration: none;
         color: #ffba31;
+    }
+    .carousel-item.active {
+        display: flex !important;
+        flex-direction: row;
+    }
+    .mobile{
+        display: none;
+    }
+    span.carousel-control-prev-icon {
+        display: block;
+        margin-bottom: 70px;
+        position: relative;
+        left: -60px;
+    }
+    span.carousel-control-next-icon {
+        display: block;
+        margin-bottom: 70px;
+        position: relative;
+        right: -55px;
+    }
+    .carousel-indicators [data-bs-target] {
+        display: block;
+        position: relative !important;
+        top: 100px !important;
+        background-color: #000000 !important;
     }
     
 }
