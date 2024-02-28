@@ -9,6 +9,7 @@ const iconTrois = document.querySelector(".Itrois");
 
 //Les pages
 const pagePortfolio = document.querySelector(".contenuPortfolio");
+const portfolio = document.querySelector(".portfolio");
 const NavDroite = document.querySelector("aside");
 const pageAccueil = document.querySelector(".contenuAccueil");
 const pageApropos = document.querySelector(".contenuApropos");
@@ -32,6 +33,7 @@ lienUn.addEventListener("click", () =>{
     body.style.overflow = "hidden"
     pageAccueil.style.display = "flex";
     pageApropos.style.display = "none";
+    portfolio.style.width = "0%";
 })
 lienDeux.addEventListener("click", () =>{
     lienUn.style.opacity = "0.1";
@@ -48,6 +50,7 @@ lienDeux.addEventListener("click", () =>{
     body.style.overflow = "auto"
     pageAccueil.style.display = "none";
     pageApropos.style.display = "block";
+    portfolio.style.width = "0%";
 })
 lienTrois.addEventListener("click", () => {
     lienUn.style.opacity="0.1";
@@ -65,6 +68,7 @@ lienTrois.addEventListener("click", () => {
     body.style.overflow = "auto"
     pageAccueil.style.display = "none";
     pageApropos.style.display = "none";
+    portfolio.style.width = "75%";
 })
 
 
@@ -86,6 +90,7 @@ iconUn.addEventListener("click", () =>{
     body.style.overflow = "hidden"
     pageAccueil.style.display = "flex";
     pageApropos.style.display = "none";
+    portfolio.style.width = "0%";
 
 })
 iconDeux.addEventListener("click", () =>{
@@ -105,6 +110,7 @@ iconDeux.addEventListener("click", () =>{
     body.style.overflow = "auto"
     pageAccueil.style.display = "none";
     pageApropos.style.display = "block";
+    portfolio.style.width = "0%";
 
 })
 iconTrois.addEventListener("click", () => {
@@ -122,6 +128,7 @@ iconTrois.addEventListener("click", () => {
     body.style.overflow = "auto"
     pageAccueil.style.display = "none";
     pageApropos.style.display = "none";
+    portfolio.style.width = "75%";
 })
 
 
@@ -140,6 +147,7 @@ buttonAccueil.addEventListener("click", () =>{
     body.style.overflow = "auto"
     pageAccueil.style.display = "none";
     pageApropos.style.display = "block";
+    portfolio.style.width = "0%";
 })
 
 const btnContact = document.querySelector(".contactLink")
@@ -154,7 +162,7 @@ Xcontact.addEventListener("click", () =>{
     pageContact1.style.display = "none"
 })
 
-const  infoSite = document.querySelector("#infoSite")
+const  infoSite = document.querySelector(".infoSite")
 const lesInfosParoisse = document.querySelector("#lesInfosParoisse")
 
 infoSite.addEventListener("click", () =>{
@@ -163,56 +171,56 @@ infoSite.addEventListener("click", () =>{
 
 const XdetailSites = document.querySelectorAll(".XdetailSite");
 
-const  infoSiteCiwos = document.querySelector("#infoSiteCiwos")
+const  infoSiteCiwos = document.querySelector(".infoSiteCiwos")
 const lesInfosCiwos = document.querySelector("#lesInfosCiwos")
 
 infoSiteCiwos.addEventListener("click", () =>{
     lesInfosCiwos.style.display = "flex"
 })
 
-const  infoSiteTetris = document.querySelector("#infoSiteTetris")
+const  infoSiteTetris = document.querySelector(".infoSiteTetris")
 const lesInfosTetris = document.querySelector("#lesInfosTetris")
 
 infoSiteTetris.addEventListener("click", () =>{
     lesInfosTetris.style.display = "flex"
 })
 
-const  infoSiteSnake = document.querySelector("#infoSiteSnake")
+const  infoSiteSnake = document.querySelector(".infoSiteSnake")
 const lesInfosSnake = document.querySelector("#lesInfosSnake")
 
 infoSiteSnake.addEventListener("click", () =>{
     lesInfosSnake.style.display = "flex"
 })
 
-const  infoSiteZombie = document.querySelector("#infoSiteZombie")
+const  infoSiteZombie = document.querySelector(".infoSiteZombie")
 const lesInfosZombie = document.querySelector("#lesInfosZombie")
 
 infoSiteZombie.addEventListener("click", () =>{
     lesInfosZombie.style.display = "flex"
 })
 
-const  infoSiteSae301 = document.querySelector("#infoSiteSae301")
+const  infoSiteSae301 = document.querySelector(".infoSiteSae301")
 const lesInfosSae301 = document.querySelector("#lesInfosSae301")
 
 infoSiteSae301.addEventListener("click", () =>{
     lesInfosSae301.style.display = "flex"
 })
 
-const  infoSiteBootstrap = document.querySelector("#infoSiteBootstrap")
+const  infoSiteBootstrap = document.querySelector(".infoSiteBootstrap")
 const lesInfosBootstrap = document.querySelector("#lesInfosBootstrap")
 
 infoSiteBootstrap.addEventListener("click", () =>{
     lesInfosBootstrap.style.display = "flex"
 })
 
-const  infoSiteVuejs = document.querySelector("#infoSiteVuejs")
+const  infoSiteVuejs = document.querySelector(".infoSiteVuejs")
 const lesInfosVuejs = document.querySelector("#lesInfosVuejs")
 
 infoSiteVuejs.addEventListener("click", () =>{
     lesInfosVuejs.style.display = "flex"
 })
 
-const  infoSiteSae203 = document.querySelector("#infoSiteSae203")
+const  infoSiteSae203 = document.querySelector(".infoSiteSae203")
 const lesInfosSae203 = document.querySelector("#lesInfosSae203")
 
 infoSiteSae203.addEventListener("click", () =>{
@@ -236,7 +244,44 @@ XdetailSites.forEach(XdetailSite => {
     });
 });
 
-if (window.innerWidth <= 768) { // Vérifie si la largeur de la fenêtre est inférieure ou égale à 768 pixels (ajustez selon vos besoins)
-    alert("Ce site n'est pas encore accessible sur les appareils mobiles. Veuillez utiliser un ordinateur. Merci de votre compréhension !");
-}
+// pour le mobile
+const lienAutreSite = document.querySelector(".btnDeuxiemePartie");
+const btnActive = document.querySelector(".btn-active");
+const partieUneSite = document.querySelector(".lesSites");
+const partieDeuxSite = document.querySelector(".lesSite2");
+lienAutreSite.addEventListener("click", () => {
+    partieUneSite.style.display = "none";
+    partieDeuxSite.style.display="block"
+})
+
+btnActive.addEventListener("click", () => {
+    partieUneSite.style.display = "block";
+    partieDeuxSite.style.display="none"
+})
+
+const lienAccMobile = document.querySelector("#accueilMobile")
+const lienAproposMobile = document.querySelector("#aProposMobile")
+
+const lienportfolioMobile = document.querySelector("#portfolio")
+
+lienAccMobile.addEventListener("click", () =>{
+    pagePortfolio.style.display = "none";
+    body.style.overflow = "auto"
+    pageAccueil.style.display = "flex";
+    pageApropos.style.display = "none";
+})
+lienAproposMobile.addEventListener("click", () =>{
+    pagePortfolio.style.display = "none";
+    body.style.overflow = "auto"
+    pageAccueil.style.display = "none";
+    pageApropos.style.display = "block";
+})
+lienportfolioMobile.addEventListener("click", () =>{
+    pagePortfolio.style.display = "block";
+    body.style.overflow = "auto"
+    pageAccueil.style.display = "none";
+    pageApropos.style.display = "none";
+    portfolio.style.width = "100%";
+})
+
 

@@ -12,25 +12,55 @@
 </head>
 <body>
     <main>
+        <header class="navMobile">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Guillaume Samtmann</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="accueilMobile" aria-current="page" href="#">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="aProposMobile" href="#">A propos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="portfolio" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/Guillaume-samtmann" class="nav-link" aria-disabled="true">GitHub</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.linkedin.com/in/guillaume-samtmann-343715253/" class="nav-link" aria-disabled="true">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <img class="imgAside" src="image/guillaumes-img.jpg" alt="">
+            <ul class="link">
+                <div class="cercle"></div>
+                <hr>
+                <li class="linkNav Un"><a href="#accueil">Accueil</a></li>
+                <hr>
+                <li class="linkNav deux"><a href="#apropos">À propos de moi</a></li>
+                <hr>
+                <li class="linkNav trois"><a href="#portfolio">portfolio</a></li>
+                <hr>
+                <li class="linkNav deux"><a href="https://github.com/Guillaume-samtmann" target="..">GitHub</a></li>
+                <hr>
+                <li class="linkNav deux"><a href="https://www.linkedin.com/in/guillaume-samtmann-343715253/" target="..">Linkedin</a></li>
+                <hr>
+                <div class="cercle"></div>
+            </ul>
+        </aside>
         <section class="portfolio">
-            <aside>
-                <img src="image/guillaumes-img.jpg" alt="">
-                <ul class="link">
-                    <div class="cercle"></div>
-                    <hr>
-                    <li class="linkNav Un"><a href="#accueil">Accueil</a></li>
-                    <hr>
-                    <li class="linkNav deux"><a href="#apropos">À propos de moi</a></li>
-                    <hr>
-                    <li class="linkNav trois"><a href="#portfolio">portfolio</a></li>
-                    <hr>
-                    <li class="linkNav deux"><a href="https://github.com/Guillaume-samtmann" target="..">GitHub</a></li>
-                    <hr>
-                    <li class="linkNav deux"><a href="https://www.linkedin.com/in/guillaume-samtmann-343715253/" target="..">Linkedin</a></li>
-                    <hr>
-                    <div class="cercle"></div>
-                </ul>
-            </aside>
+
             <!--Portfolio-->
             <section class="contenuPortfolio">
                 <div class="titre">
@@ -119,17 +149,17 @@
                 </div>
                 <section class="MesSites">
                     <h2>Mes sites : </h2>
-                    <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carouselExampleIndicators carousel slide" >
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn_slide" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn_slide" aria-current="true" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target=".carouselExampleIndicators" data-bs-slide-to="0" class="active btn_slide" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target=".carouselExampleIndicators" data-bs-slide-to="1" class="btn_slide" aria-current="true" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <!--Site paroisse-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/site_paroisseV2.png" class="d-block" id="infoSite" alt="Site paroisse ssf">
+                                        <img src="image/site_paroisseV2.png" class="d-block infoSite"  alt="Site paroisse ssf">
                                         <div class="language1">
                                             <span class="languageUtiliser1"><p>Wordpress</p></span>
                                         </div>
@@ -139,7 +169,7 @@
                                 <!--Site sae301-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/site_sae301.png" class="d-block " id="infoSiteSae301" alt="site sae301">
+                                        <img src="image/site_sae301.png" class="d-block infoSiteSae301" alt="site sae301">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -153,7 +183,7 @@
                                 <!--Site ciwos-store-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/ciows-store.jpg" class="d-block " id="infoSiteCiwos" alt="site ciwos-store">
+                                        <img src="image/ciows-store.jpg" class="d-block infoSiteCiwos" alt="site ciwos-store">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -171,7 +201,7 @@
                                 <!--Site bootstrap-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/site_bootstrap.png" class="d-block " id="infoSiteBootstrap" alt="site bootstrap">
+                                        <img src="image/site_bootstrap.png" class="d-block infoSiteBootstrap"  alt="site bootstrap">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -185,7 +215,7 @@
                                 <!--Site vueJs-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/site_vuejs.png" class="d-block " id="infoSiteVuejs" alt="site vuejs">
+                                        <img src="image/site_vuejs.png" class="d-block infoSiteVuejs"  alt="site vuejs">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -199,7 +229,7 @@
                                 <!--Site sae203-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/site_sae203.png" class="d-block " id="infoSiteSae203" alt="site sae203">
+                                        <img src="image/site_sae203.png" class="d-block infoSiteSae203"  alt="site sae203">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -213,11 +243,11 @@
 
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target=".carouselExampleIndicators" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target=".carouselExampleIndicators" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -259,7 +289,7 @@
                             Malgré tout, ce jeu a quelques problèmes d'optimisation.</p>
                     </div>
                     <h2>Mes Jeux Vidéo : </h2>
-                    <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carouselExampleCaptions carousel slide">
                         <div class="carousel-indicators">
                             <!--<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active btn_slide" aria-current="true" aria-label="Slide 1"></button>-->
                         </div>
@@ -268,7 +298,7 @@
                                 <!--Zombie War-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/jeux_video.png" class="d-block " id="infoSiteZombie" alt="site jeux vidéo">
+                                        <img src="image/jeux_video.png" class="d-block infoSiteZombie" alt="site jeux vidéo">
                                         <div class="language1">
                                             <span class="languageUtiliser1"><p>Unreal Engine</p></span>
                                         </div>
@@ -278,7 +308,7 @@
                                 <!--snake-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/snake.png" class="d-block " id="infoSiteSnake" alt="jeux snake">
+                                        <img src="image/snake.png" class="d-block infoSiteSnake"  alt="jeux snake">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -290,7 +320,7 @@
                                 <!--tetris-->
                                 <div class="leProjet">
                                     <div class="contenuProjet">
-                                        <img src="image/tetris.png" class="d-block" id="infoSiteTetris" alt="jeux tetris">
+                                        <img src="image/tetris.png" class="d-block infoSiteTetris" alt="jeux tetris">
                                         <div class="language">
                                             <span class="languageUtiliser"><p>HTML</p></span>
                                             <span class="languageUtiliser"><p>CSS</p></span>
@@ -312,6 +342,140 @@
                         </button>-->
                     </div>
                 </section>
+
+                <section class="MesSitesMobile">
+                    <h2>Mes sites : </h2>
+                    <div class="lesSites">
+                        <!--Site paroisse-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/site_paroisseV2.png" class="d-block infoSite"  alt="Site paroisse ssf">
+                                <div class="language1">
+                                    <span class="languageUtiliser1"><p>Wordpress</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://paroisses-catholiques-ssf.com/" target="..">Découvrir le site</a></button>
+                        </div>
+                        <!--Site sae301-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/site_sae301.png" class="d-block infoSiteSae301" alt="site sae301">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>PHP</p></span>
+                                    <span class="languageUtiliser"><p>TWIG</p></span>
+                                    <span class="languageUtiliser"><p>SQL</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/sae301/" target="..">Découvrir le site</a></button>
+                        </div>
+                        <!--Site ciwos-store-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/ciows-store.jpg" class="d-block infoSiteCiwos" alt="site ciwos-store">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>PHP</p></span>
+                                    <span class="languageUtiliser"><p>JavaScript</p></span>
+                                    <span class="languageUtiliser"><p>SQL</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://ciwos-store.fr/" target="..">Découvrir le site</a></button>
+                        </div>
+                    </div>
+                    <div class="lesSite2">
+                        <!--Site bootstrap-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/site_bootstrap.png" class="d-block infoSiteBootstrap"  alt="site bootstrap">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>JavaScript</p></span>
+                                    <span class="languageUtiliser"><p>Bootstrap</p></span>
+
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/exoBootstrap/" target="..">Découvrir le site</a></button>
+                        </div>
+                        <!--Site vueJs-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/site_vuejs.png" class="d-block infoSiteVuejs"  alt="site vuejs">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>JavaScript</p></span>
+                                    <span class="languageUtiliser"><p>Vue.js</p></span>
+
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/testVueJs/#/" target="..">Découvrir le site</a></button>
+                        </div>
+                        <!--Site sae203-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/site_sae203.png" class="d-block infoSiteSae203"  alt="site sae203">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>JavaScript</p></span>
+                                    <span class="languageUtiliser"><p>PHP</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/sae203/" target="..">Découvrir le site</a></button>
+                        </div>
+                    </div>
+                </section>
+                <div class="btnSite">
+                    <span class="btn-active"><p>1</p></span>
+                    <span class="btnDeuxiemePartie"><p>2</p></span>
+                </div>
+                <section class="MesJeuxVideoMobile">
+                    <h2>Mes jeux vidéo : </h2>
+                    <div class="jeuxVideo">
+                        <!--Zombie War-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/jeux_video.png" class="d-block infoSiteZombie" alt="site jeux vidéo">
+                                <div class="language1">
+                                    <span class="languageUtiliser1"><p>Unreal Engine</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://gamejolt.com/games/ZombieWar/772638" target="..">Découvrir le jeux</a></button>
+                        </div>
+                        <!--snake-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/snake.png" class="d-block infoSiteSnake"  alt="jeux snake">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>JavaScript</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/snake/" target="..">Découvrir le jeux</a></button>
+                        </div>
+                        <!--tetris-->
+                        <div class="leProjet">
+                            <div class="contenuProjet">
+                                <img src="image/tetris.png" class="d-block infoSiteTetris" alt="jeux tetris">
+                                <div class="language">
+                                    <span class="languageUtiliser"><p>HTML</p></span>
+                                    <span class="languageUtiliser"><p>CSS</p></span>
+                                    <span class="languageUtiliser"><p>JavaScript</p></span>
+                                </div>
+                            </div>
+                            <button class="buttonPortfolio"><a href="https://guillaumesamtmann.fr/autres/tetris/"  target="..">Découvrir le jeux</a></button>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+
 
             </section>
             <!--Accueil-->
@@ -408,18 +572,12 @@
                                 <p>Du 01/07/2023 au 30/08/2023 : Emploi saisonnier à la commune de Riedseltz en tant qu'adjoint technique</p>
                                 <hr>
                                 <p>Du 10/07/2022 au 27/08/2022 : Emploi saisonnier à la commune de Riedseltz en tant qu'adjoint technique</p>
-
                             </div>
-
                         </div>
                     </section>
-                
                 </div>
-                    
             </section>
 
-                    
-            </section>
             <aside class="nav2">
                 <ul class="linkSvg">
                     <li class="linkNavSvg Iun"><a href="#">

@@ -5,18 +5,27 @@
     font-family: 'poppins';
  
 }
+.navbar{
+    background-color: rgb(255 186 49) !important;
+}
+nav.navbar.navbar-expand-lg {
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
 
+main {
+    display: block;
+}
 
 .portfolio{
     display: flex;
 }
 aside{
-    opacity: 100;
-    height: 145vh;
-    background-color: #ffba31;
-    width: 20%;
     display: none !important;
-
+}
+.imgAside{
+    width: 100%;
 }
 .link {
     margin-top: 40px;
@@ -24,49 +33,98 @@ aside{
     flex-direction: column;
     align-items: center;
 }
-.link hr{
-    margin: 0px;
-    width: 3px;
-    background-color: black;
-    height: 30px;
+.contenuAccueil{
+    width: 100%;
+    display: none;
+    align-items: flex-start;
+    flex-direction: column;
 }
-.cercle{
-    width: 8px;
-    height: 8px;
-    background-color: black;
-    border-radius: 10%;
+
+.alignBlockAcc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.linkNav{
+
+.description {
+    margin-top: 90px;
+}
+.description h2{
+    margin-left: 40px;
+}
+.nomPrenom {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    color: #ffba31;
+}
+
+.sousTitreAcc {
+    margin-top: 15px;
+    font-size: 1.40rem;
+    width: 80%;
+}
+
+.phtProfil {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    border-radius: 221px;
+    width: 40%;
+}
+.introduction {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.buttonAcc{
+    background-color: #ffba31;
+    border: none;
+    width: 60%;
+    height: 2.5rem;
+    border-radius: 20px;
+    transition: all 0.5s ease-out
+}
+.buttonAcc li{
     list-style: none;
 }
-.linkNav a{
-    font-size: 1.3rem;
-    color: black;
+.buttonAcc li a{
     text-decoration: none;
-
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease-out
 }
-.Un{
-    opacity: 0.1;
-
+.buttonAcc:hover{
+    background-color: #ffba31b7;
+    scale: 0.97;
 }
-.deux{
-    opacity: 0.1;
-
+.buttonAcc li a:hover{
+    color: #000000;
 }
-.trois{
-    opacity: 0.9;
-
+.MesCompetences {
+    margin-top: 30px;
+    height: 39vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.quatre{
-    opacity: 0.1;
-
+.imgComptetence {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
 }
-aside img{
-    width: 100%;
-    height: 28%;
+h2 {
+    display: flex;
+    text-decoration: underline;
+    margin-bottom: 12px;
+    font-size: 2rem;
 }
 
 .contenuPortfolio{
+    padding-top: 58px;
     width: 100%;
 }
 
@@ -127,9 +185,9 @@ aside img{
     align-items: center;
 }
 .titre p {
+    padding: 15px;
     text-align: center;
-    padding-left: 19px;
-    margin-top: 129px;
+    margin-top: 135px;
     margin-bottom: 1rem;
     position: absolute;
 }
@@ -140,7 +198,6 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 37px;
     margin-bottom: 10px;
 }
 
@@ -158,47 +215,12 @@ h1 {
 }
 
 .nav2 {
-    position: fixed;
-    right: 0  ;
-    border-radius: 50px;
-    display: flex !important;
-    margin-top: 140px;
-    margin-right: 5px;
-    height: 25rem;
-    width: 12%;
-    background-color: #ffba31;
-    justify-content: center;
-    align-items: center;
-}
-.linkSvg {
-    padding-left: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: none;
 }
 
-.linkNavSvg{
-    padding-top: 20px;
-    list-style: none;
-}
-.linkNavSvg a{
-    color: black;
-    text-decoration: none;
-}
-.Iun{
-    opacity: 0.1;
-
-}
-.Ideux{
-    opacity: 0.1;
-
-}
-.Itrois{
-    opacity: 0.9;
-}
 .contactLink {
     bottom: 56px;
-    right: 40px;
+    right: 10px;
     position: fixed;
     display: flex;
     border-radius: 100%;
@@ -250,32 +272,12 @@ h1 {
     cursor: pointer;
 }
 
-.contenuAccueil{
-    width: 100%;
-    display: none;
-    align-items: center;
-    flex-direction: column;
-}
-.photoMoi {
-    height: 32vh;
-    width: 32vh;
-    background-image: url(../image/guillaumes-img.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.description {
-    margin-left: 20px;
-}
 h2 {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
-.nomPrenom {
-    margin-left: 10px;
-    text-align: center;
-    color: #ffba31;
-}
+
 h3 {
     text-align: center;
     width: 70%;
@@ -284,39 +286,8 @@ h3 {
     margin-bottom: 10px;
 }
 
-.introduction{
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.buttonAcc{
-    background-color: #ffba31;
-    border: none;
-    width: 60%;
-    height: 2.5rem;
-    border-radius: 20px;
-    transition: all 0.5s ease-out
-}
-.buttonAcc li{
-    list-style: none;
-}
-.buttonAcc li a{
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 0.5s ease-out
-}
-.buttonAcc:hover{
-    background-color: #ffba31b7;
-    scale: 0.97;
-}
-.buttonAcc li a:hover{
-    color: #000000;
-}
-
 .contenuApropos{
+    padding-top: 58px;
     display: none;
     width: 100%;
 }
@@ -367,6 +338,7 @@ h3 {
     align-items: center;
 }
 .repartionCv {
+    margin-right: 20px;
     margin-left: 20px;
     height: 47rem;
     display: flex;
@@ -470,9 +442,7 @@ svg.bi.bi-code-square {
     margin-bottom: 20px;
     margin-top: 20px;
     display: flex;
-    width: 100%;
-    margin-left: 52px;
-    margin-right: 20px;
+    width: 90%;
     flex-direction: column;
 }
 .experienceCv h3{
@@ -606,7 +576,7 @@ img.d-block {
 
 .carousel-inner {
     padding-top: 14px;
-   
+
 }
 
 .carousel-control-prev-icon {
@@ -621,31 +591,369 @@ img.d-block {
     justify-content: space-evenly;
 }
 .carousel-indicators [data-bs-target] {
-    display: none;
+    display: block;
     position: relative !important;
     top: 100px !important;
     background-color: #000000 !important;
 }
-span.carousel-control-next-icon {
-    margin-bottom: 70px;
-    position: relative;
-    right: -55px;
-    display: none;
-}
+
 span.carousel-control-prev-icon {
     margin-bottom: 70px;
     position: relative;
-
+    display: block;
+}
+.MesSites {
     display: none;
+}
+.MesJeuxVideo{
+    display: none;
+}
+.MesSitesMobile{
+    display: block;
+}
+.language {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 271px;
+    display: flex;
+    background-color: #ffba3142;
+    height: 84px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.language1 {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 271px;
+    display: flex;
+    background-color: #ffba3142;
+    height: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.languageUtiliser{
+    border-radius: 50px;
+    margin: 5px;
+    display: flex;
+    margin-top: 10px;
+    width: 25%;
+    height: 25px;
+    background-color: #fffbef;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageUtiliser1{
+    border-radius: 50px;
+    margin: 5px;
+    display: flex;
+    margin-top: 10px;
+    width: 40%;
+    height: 25px;
+    background-color: #fffbef;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageUtiliser p{
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #323232;
+    margin-bottom: 0px;
+}
+
+.languageUtiliser1 p{
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-align: center;
+    color: #323232;
+    margin-bottom: 0px;
+}
+#lesInfosParoisse {
+    border: 2px solid;
+    margin-top: 94px;
+    margin-left: 115px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.enTeteDetailSite{
+    display: flex;
+}
+.enTeteDetailSite h3{
+    font-size: 1.4rem;
+    border-top-left-radius: 10px;
+    padding-top: 12px;
+    height: 50px;
+    width: 93%;
+}
+.paragrapheSiteDetail {
+    padding: 15px;
+    line-height: 27px;
+}
+.XdetailSite {
+    display: flex;
+    border-top-right-radius: 10px;
+    height: 50px;
+    background: #ffba31;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+    width: 7%;
+    justify-content: center;
+}
+.XdetailSite:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.infoSite:hover{
+    cursor: pointer;
+}
+#lesInfosCiwos {
+    border: 2px solid;
+    margin-top: 94px;
+    margin-left: 115px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteCiwos:hover{
+    cursor: pointer;
+}
+#lesInfosTetris {
+    border: 2px solid;
+
+    margin-left: 57px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteTetris:hover{
+    cursor: pointer;
+}
+#lesInfosSnake {
+    border: 2px solid;
+
+    margin-left: 57px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteSnake:hover{
+    cursor: pointer;
+}
+
+#lesInfosZombie {
+    border: 2px solid;
+
+    margin-left: 57px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteZombie:hover{
+    cursor: pointer;
+}
+
+#lesInfosSae301 {
+    border: 2px solid;
+    margin-top: 94px;
+    margin-left: 115px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteSae301:hover{
+    cursor: pointer;
+}
+
+#lesInfosBootstrap {
+    border: 2px solid;
+    margin-top: 94px;
+    margin-left: 115px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteBootstrap:hover{
+    cursor: pointer;
+}
+#lesInfosVuejs {
+    border: 2px solid;
+    margin-top: 94px;
+    margin-left: 115px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteVuejs:hover{
+    cursor: pointer;
+}
+
+#lesInfosSae203 {
+    border: 2px solid;
+    margin-top: 94px;
+    margin-left: 115px;
+    background-color: #ffffff;
+    position: absolute;
+    width: 911px;
+    height: 384px;
+    z-index: 99;
+    display: none;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.infoSiteSae203:hover{
+    cursor: pointer;
+}
+.MesSitesMobile h2{
+    margin-top: 90px;
+    margin-left: 20px;
+}
+.btnSite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lesSite2{
+    display: none;
+}
+.lesSites{
+    display: block;
+}
+.btnDeuxiemePartie {
+    padding: 10px;
+}
+.btnDeuxiemePartie p{
+    font-size: 1.3rem;
+}
+.MesJeuxVideoMobile{
+    display: block;
+}
+.MesJeuxVideoMobile h2{
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-bottom: 45px;
 }
 
 
+
 @media screen and (min-width: 480px) {
+    main {
+        display: flex;
+    }
+    .navMobile{
+        display: none;
+    }
+    .btnSite{
+        display: none;
+    }
     aside{
+        opacity: 100;
+        height: 155vh;
+        background-color: #ffba31;
+        width: 20%;
         display: block !important;
+
+    }
+    .link {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link hr{
+        margin: 0px;
+        width: 3px;
+        background-color: black;
+        height: 30px;
+    }
+    .cercle{
+        width: 8px;
+        height: 8px;
+        background-color: black;
+        border-radius: 80%;
+    }
+    .linkNav{
+        list-style: none;
+    }
+    .linkNav a{
+        font-size: 1.3rem;
+        color: black;
+        text-decoration: none;
+
+    }
+    .Un{
+        opacity: 0.1;
+
+    }
+    .deux{
+        opacity: 0.1;
+
+    }
+    .trois{
+        opacity: 0.9;
+
+    }
+    .quatre{
+        opacity: 0.1;
+
+    }
+    .imgComptetence {
+        /* padding: 15px; */
+        width: 50px;
+        height: 50px;
     }
     .contenuPortfolio{
-        width: 75%;
+
+        padding-top: 0%;
     }
     .projet_align {
         display: flex;
@@ -666,11 +974,23 @@ span.carousel-control-prev-icon {
     }
 
     .MesSites {
+        width: 88%;
+        display: flex;
         margin: 50px;
+        flex-direction: column;
+        /* align-content: center; */
     }
 
-    .MesJeuxVideo{
+    .MesJeuxVideo {
+        display: flex;
+        width: 88%;
+        /* display: block; */
         margin: 50px;
+        flex-direction: column;
+    }
+
+    .MesSitesMobile{
+        display: none;
     }
     
     .projet{
@@ -759,23 +1079,22 @@ span.carousel-control-prev-icon {
     }
     
     .nav2 {
-        top: 0;
         border-radius: 50px;
         display: flex;
-        margin-top: 140px;
+        margin-top: 170px;
         margin-right: 50px;
-        height: 25rem;
+        height: 20rem;
         width: 3%;
         background-color: #ffba31;
-        justify-content: center;
-        align-items: center;
     }
-    
+
     .linkSvg {
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 0px;
+        justify-content: center;
     }
     .linkNavSvg{
         padding-top: 20px;
@@ -787,20 +1106,20 @@ span.carousel-control-prev-icon {
     }
     .Iun{
         opacity: 0.1;
-    
+
     }
     .Ideux{
         opacity: 0.1;
-    
+
     }
     .Itrois{
         opacity: 0.9;
     }
     .Iquatre{
         opacity: 0.1;
-    
+
     }
-    
+
     .contenuAccueil{
         height: 100vh !important;
         width: 93%;
@@ -1166,6 +1485,9 @@ span.carousel-control-prev-icon {
     .carousel-control-prev {
         width: 4% !important;
     }
+    .carousel-control-next, .carousel-control-prev {
+        width: 4% !important;
+    }
     span.carousel-control-prev-icon {
         display: block;
         margin-bottom: 70px;
@@ -1176,7 +1498,6 @@ span.carousel-control-prev-icon {
         display: block;
         margin-bottom: 70px;
         position: relative;
-        right: -55px;
     }
     .carousel-indicators [data-bs-target] {
         display: block;
@@ -1226,7 +1547,7 @@ span.carousel-control-prev-icon {
         cursor: pointer;
     }
 
-    #infoSite:hover{
+    .infoSite:hover{
         cursor: pointer;
     }
     #lesInfosCiwos {
@@ -1242,7 +1563,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteCiwos:hover{
+    .infoSiteCiwos:hover{
         cursor: pointer;
     }
     #lesInfosTetris {
@@ -1258,7 +1579,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteTetris:hover{
+    .infoSiteTetris:hover{
         cursor: pointer;
     }
     #lesInfosSnake {
@@ -1274,7 +1595,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteSnake:hover{
+    .infoSiteSnake:hover{
         cursor: pointer;
     }
 
@@ -1291,7 +1612,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteZombie:hover{
+    .infoSiteZombie:hover{
         cursor: pointer;
     }
 
@@ -1308,7 +1629,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteSae301:hover{
+    .infoSiteSae301:hover{
         cursor: pointer;
     }
 
@@ -1325,7 +1646,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteBootstrap:hover{
+    .infoSiteBootstrap:hover{
         cursor: pointer;
     }
     #lesInfosVuejs {
@@ -1341,7 +1662,7 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteVuejs:hover{
+    .infoSiteVuejs:hover{
         cursor: pointer;
     }
 
@@ -1358,9 +1679,22 @@ span.carousel-control-prev-icon {
         flex-direction: column;
         border-radius: 10px;
     }
-    #infoSiteSae203:hover{
+    .infoSiteSae203:hover{
         cursor: pointer;
     }
+    .MesJeuxVideoMobile{
+        display: none;
+    }
+    .contactLink {
+        bottom: 56px;
+        right: 40px;
+
+    }
+    .portfolio {
+        width: 75%;
+    }
+
+
 }
 
 
